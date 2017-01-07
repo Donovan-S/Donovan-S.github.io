@@ -1,0 +1,98 @@
+/* Headings settings*/
+.headings {
+	font-family: Helvetica, Times, serif;
+	/*word-spacing: 0.1em;*/
+	/*letter-spacing: 0.1em; color: rgb(231,28,0);*/
+
+}
+h1 {
+	font-size: 300%;
+	text-align: center;
+	color: rgb(245,181,142);
+}
+h2 {
+	font-style: italic;
+	/*letter-spacing: 0.2em;*/
+	color: rgb(255,206,150);
+	 text-transform: uppercase;
+	text-align: center;
+}
+/* Paragraph settings*/
+p {
+	font-family: Garamond, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 1.2em;
+	color: rgb(233,233,233);
+	text-align: center;
+}
+/* Body settings */
+body {
+	background-color: rgb(105,114,158);
+}
+
+/* Unordered List Settings*/
+ul {
+		list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+/* List colors */
+li {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	letter-spacing: 2px;
+	float: left;
+}
+/* Navbar link settings */
+li a {
+    display: block;
+    color: rgb(255,249,251);
+		padding: 14px 35px 14px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Change the link color to black on hover */
+li a:hover {
+    background-color: white;
+		color: black;
+}
+/* navigation settings */
+.navigation {
+	margin-left: auto;
+  margin-right: auto;
+	width: 100%;
+	text-align: right;
+	display: block;
+	border-style: solid;
+	border-width: 3px;
+}
+/* Link colors*/
+.link {
+	color: rgb(50,153,187);
+}
+/* Logo settings */
+.logo {
+	width: 10%;
+	height: 10%;
+	margin-left: 70px;
+}
+/* Screenshots settings */
+.game-screenshots {
+	height: 300px;
+	width: 500px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/* Description settings */
+#Description {
+	margin: 30px 30px 30px 30px;
+	font-size: 25px;
+}
+/* Tagline settings */
+#tagline {
+	margin: 30px 30px 30px 30px;
+}
