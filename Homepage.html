@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<!--The style section will go in CSS when I learn how to do that.-->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+ <a name="Home"><title>DS Games</title>
+   <script src="D:/Documents/New Website/jquery-1.8.2.min.js"></script>
+
+   <script>
+     $(function() {
+         // Stick the #nav to the top of the window
+         var nav = $('#press-nav');
+         var navHomeY = nav.offset().top;
+         var isFixed = false;
+         var $w = $(window);
+
+         $w.scroll(function() {
+             var scrollTop = $w.scrollTop();
+             var shouldBeFixed = scrollTop > navHomeY;
+             if (shouldBeFixed && !isFixed) {
+                 nav.css({
+                     position: 'fixed',
+                     top: 0,
+                     left: nav.offset().left,
+                     width: nav.width()
+                 });
+                 isFixed = true;
+             }
+             else if (!shouldBeFixed && isFixed)
+             {
+                 nav.css({
+                     position: 'static'
+                 });
+                 isFixed = false;
+             }
+         });
+
+       /*var elements = document.getElementsByTagName('a');
+       for(var i = 1; i < elements.length; i++) {
+           elements[i].onclick = function() {
+               var hash = this.hash.substr(1),
+                   elementTop = document.getElementById(hash).offsetTop;
+               window.scrollTo(0, elementTop + 350);
+               window.location.hash = '';
+               return false;
+           }
+       }*/
+
+     });
+
+
+   </script>
+</head>  
+
+<body>
+	<h1 class="headings"></a>Donovan Sepulveda Games</h1>
+	<!--<img class="logo" src="D:\documents\RTFSite\HotCakesStudios.png"/>-->
+	<h2 class="headings"; id = "tagline">
+    Design. Create. Innovate.
+	</h2>
+  <div id="press-nav">
+	  <div class="navigation">
+		  <ul>
+			  <li> <a href="#Home">Home</a></li>
+			  <li> <a href="#CurrentProject">Current Project!</a></li>
+			  <li> <a href="#Description">Description</a></li>
+			  <li> <a href="#Screenshots">Screenshots</a></li>
+			  <li> <a href="#Gifs">Anim GIFs</a></li>
+			  <li> <a href="#Credits">Credits</a></li>
+			  <li> <a href="#Contact">Contact Me!</a></li>
+		  </ul>
+	  </div>
+  </div>
+	<p id = "CurrentProject">
+		<h1> Rapture The Flag! </h1> <br> <br>
+		<div style="text-align: center">
+			<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/XZcW1HzqqYE" frameborder="0" allowfullscreen>
+			</iframe>
+		</div>
+    <p>
+  		Rapture the Flag is a multiplayer team-based objective game where players
+  		take control of the forces of either heaven or hell and battle it out for
+  		control of the souls of the recently departed. Teams of two battle for
+  		control of each other's soul flag in an arena filled with moving walls,
+  		spinning pillars, and the goal of the base game mode is to capture the
+  		enemy's flag while protecting yours.
+  	</p>
+    <h1> Screenshots/Gifs </h1>
+    <img class="game-screenshots" src="D:\documents\New Website\RTF5.png"/>
+    <img class="game-screenshots" src="D:\documents\New Website\Melee.gif"/>
+		<img class="game-screenshots" src="D:\documents\New Website\RTF1.png"/>
+		<img class="game-screenshots" src="D:\documents\New Website\RTF2.png"/>
+	</p>
+	<hr id = "Description"> <br>
+	<h1> What is Rapture The Flag? </h1>
+	<p>
+		Rapture the Flag is a multiplayer team-based objective game where players
+		take control of the forces of either heaven or hell and battle it out for
+		control of the souls of the recently departed. Teams of two battle for
+		control of each other's soul flag in an arena filled with moving walls,
+		spinning pillars, and the goal of the base game mode is to capture the
+		enemy's flag while protecting yours.
+	</p>
+	<hr id = "Screenshots"> <br>
+	<h1> Screenshots </h1>
+		<img class="game-screenshots" src="D:\documents\RTFSite\RTF5.png"/>
+		<img class="game-screenshots" src="D:\documents\RTFSite\RTF3.png"/>
+
+	<hr id = "Gifs"> <br>
+	<h1> In-Game GIFs </h1>
+		<img class="game-screenshots" src="D:\documents\RTFSite\Flag.gif"/>
+    <img class="game-screenshots" src="D:\documents\RTFSite\TeamAttack.gif"/>
+	<hr id = "Credits"> <br>
+	<h1> Credits / Special Thanks </h1>
+	<p align="center">
+		Chris Laferriere - Gameplay Programmer <br>
+		Donovan Sepulveda - Systems Programmer, Level Designer, and UI Programmer <br>
+		DJ Bilal - Environmental Artist, UI Artist, and Sound Designer <br>
+		Alaina Danio - Character Artist and Animator <br>
+	</p>
+	<hr id = "Contact"> <br>
+	<h1> Contact Me! </h1>
+	<p align="center">
+	  Email - donovansepulveda@gmail.com <br>
+
+	</p> <br>
+    <img class="logo" src="D:\documents\RTFSite\Azazel.png"/>
+  	<img class="logo" src="D:\documents\RTFSite\HotCakesStudios.png"/>
+    <img class="logo" src="D:\documents\RTFSite\Urial.png"/>
+    <img class="logo" src="D:\documents\RTFSite\Lilith.png"/>
+    <img class="logo" src="D:\documents\RTFSite\HotCakesStudios.png"/>
+    <img class="logo" src="D:\documents\RTFSite\Barachial.png"/>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>
